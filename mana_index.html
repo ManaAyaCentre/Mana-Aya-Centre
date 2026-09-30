@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana Aya Centre | Trusted Home Healthcare & Caregiving Services</title>
+    <link rel="stylesheet" href="mana_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <h1> Mana Aya Centre</h1>
+            <p class="motto">"Honesty is the Best Policy" 🤝</p>
+            <span class="badge">Serving Families Since 2014 🌟</span>
+            <div class="header-contacts">
+                <a href="tel:+918282964725">📞 8282964725</a> | 
+                <a href="tel:+917980757122">📞 7980757122</a>
+            </div>
+        </div>
+        <nav>
+            <a href="#home">Home 🏠</a>
+            <a href="#services">Services 🩺</a>
+            <a href="#about">About Us ℹ️</a>
+            <a href="#contact">Contact Us 📞</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Compassionate & Professional Care At Your Home ❤️</h2>
+            <p>Providing certified nurses, trained ayas, and expert physiotherapists for your loved ones.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Book Caregiver Now 📋</a>
+                <a href="tel:+918282964725" class="btn call-btn">Call Immediately 📞</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-container">
+        <h2>Our Dedicated Services 🛠️</h2>
+        <div class="service-grid">
+            
+            <div class="service-card nurse">
+                <div class="card-icon">👩‍⚕️</div>
+                <h3>Qualified Nurses</h3>
+                <p>24/7 or day-shift nursing support for post-operative care, medication management, and daily medical oversight.</p>
+            </div>
+
+            <div class="service-card aya">
+                <div class="card-icon">👵</div>
+                <h3>Trained Ayas & Attendants</h3>
+                <p>Gentle and respectful daily care support, personal hygiene assistance, mobility assistance, and companionship.</p>
+            </div>
+
+            <div class="service-card physio">
+                <div class="card-icon">🧘‍♂️</div>
+                <h3>Expert Physiotherapists</h3>
+                <p>Personalized home physiotherapy sessions for stroke recovery, joint pain, paralysis recovery, and post-fracture rehab.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="about-section">
+        <h2>Why Mana Aya Centre? 🛡️</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="icon">📜</div>
+                <h4>Honesty First</h4>
+                <p>Built on transparent pricing, genuine staff verification, and absolute integrity in service.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">🏆</div>
+                <h4>Decade of Trust</h4>
+                <p>Providing trusted healthcare attendants and household care since 2014.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">❤️</div>
+                <h4>Compassionate Care</h4>
+                <p>Treating every patient like our own family member with warmth, patience, and dignity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact-section">
+        <h2>Request a Caregiver Today 📩</h2>
+        <p class="direct-call-text">Or call directly: <strong>8282964725</strong> / <strong>7980757122</strong></p>
+        <form id="booking-form" class="contact-form" onsubmit="sendToWhatsApp(event)">
+            <div class="input-group">
+                <label>Your Name 👤:</label>
+                <input type="text" id="client-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label>Phone Number 📱:</label>
+                <input type="tel" id="client-phone" placeholder="Enter mobile number" required>
+            </div>
+            <div class="input-group">
+                <label>Service Required 🩺:</label>
+                <select id="client-service" required>
+                    <option value="">Select a service...</option>
+                    <option value="Nurse">Professional Nurse 👩‍⚕️</option>
+                    <option value="Aya">Patient Care Aya 👵</option>
+                    <option value="Physiotherapist">Physiotherapist 🧘‍♂️</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Send Booking Request 🚀</button>
+        </form>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-contact">
+        <a href="https://wa.me/918282964725" class="whatsapp-float" target="_blank">
+            💬 Chat on WhatsApp
+        </a>
+    </div>
+
+    <footer>
+        <p>© Mana Aya Centre | Honesty Is The Best Policy | Established 2014 🏥</p>
+        <p>Contacts: +91 8282964725 | +91 7980757122</p>
+    </footer>
+
+    <script src="mana_script.js"></script>
+</body>
+</html>

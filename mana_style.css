@@ -1,0 +1,193 @@
+:root {
+    --primary-blue: #0284c7;
+    --teal-bg: #e0f2fe;
+    --accent-orange: #f97316;
+    --accent-green: #16a34a;
+    --card-yellow: #fef08a;
+    --text-dark: #1e293b;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf4;
+    color: var(--text-dark);
+}
+
+header {
+    background: linear-gradient(135deg, #0284c7, #0d9488);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.motto {
+    font-style: italic;
+    color: #fef08a;
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.badge {
+    background-color: var(--accent-orange);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: var(--primary-blue);
+}
+
+.hero {
+    background: linear-gradient(rgba(2, 132, 199, 0.8), rgba(13, 148, 136, 0.8)),
+                url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services-container, .about-section, .contact-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.service-grid, .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.service-card {
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.service-card:hover { transform: translateY(-5px); }
+
+.nurse { background: #e0f2fe; border-top: 6px solid #0284c7; }
+.aya { background: #fef3c7; border-top: 6px solid #d97706; }
+.physio { background: #dcfce7; border-top: 6px solid #16a34a; }
+
+.card-icon { font-size: 3rem; margin-bottom: 10px; }
+
+.contact-section {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    padding: 14px;
+    background: var(--accent-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover { background: #15803d; }
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Header Phone Links & Direct Call Text */
+.header-contacts {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.header-contacts a {
+    color: #fef08a;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.header-contacts a:hover {
+    text-decoration: underline;
+}
+
+.direct-call-text {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
